@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./Header";
 import Nav from "./Nav";
 import Home from "./Home";
+import NewPost from "./NewPost";
 import About from "./About";
 import PostPage from "./PostPage";
 import Footer from "./Footer";
@@ -17,6 +18,7 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" Component={Home} />
+          <Route path="newpost" Component={NewPost} />
           <Route path="about" Component={About} />
           <Route path="/postpage/:id" Component={PostPage} />
           <Route path="*" Component={Missing} />
