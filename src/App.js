@@ -9,6 +9,7 @@ import PostPage from "./PostPage";
 import Footer from "./Footer";
 import Missing from "./Missing";
 import { DataProvider } from "./Context/DataContext";
+import EditPage from "./EditPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="newpost" Component={NewPost} />
           <Route path="about" Component={About} />
           <Route path="/postpage/:id" Component={PostPage} />
+          <Route path="/editpage/:id" Component={EditPage} />
           <Route path="*" Component={Missing} />
         </Routes>
       </DataProvider>
