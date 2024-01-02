@@ -4,6 +4,7 @@ import Header from "./Header";
 import Nav from "./Nav";
 import Home from "./Home";
 import About from "./About";
+import PostPage from "./PostPage";
 import Footer from "./Footer";
 import Missing from "./Missing";
 import { DataProvider } from "./Context/DataContext";
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="about" Component={About} />
+          <Route path="/postpage/:id" Component={PostPage} />
           <Route path="*" Component={Missing} />
         </Routes>
       </DataProvider>
